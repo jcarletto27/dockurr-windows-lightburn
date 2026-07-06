@@ -1,0 +1,16 @@
+# Exclude the Windows VM storage directory
+windows/
+
+# Environment variables
+.env
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db

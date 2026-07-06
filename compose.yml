@@ -1,0 +1,20 @@
+services:
+  windows:
+    build: .
+    container_name: windows-lightburn
+    environment:
+      VERSION: "tiny11"
+      LIGHTBURN_URL: "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.1.03/LightBurn-v2.1.03.exe"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
+    devices:
+      - /dev/kvm
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8006:8006
+      - 3389:3389/tcp
+      - 3389:3389/udp
+    volumes:
+      - ./windows:/storage
+    restart: always
