@@ -78,3 +78,13 @@ Wait until the initial setup process is completely finished and the Windows desk
 ### Fallback Access: Web Browser
 
 If RDP is unavailable, or if you simply need to check on the initial installation progress, the environment exposes a noVNC connection over HTTP. Navigate to `http://localhost:8006` in any modern web browser to view and control the desktop.
+
+<img width="2337" height="1323" alt="image" src="https://github.com/user-attachments/assets/9a89fedd-9866-4ed6-8bbd-ff38359e0592" />
+
+
+## Things to Consider
+### Pairing with ESP3D[https://github.com/luc-github/ESP3D] for GRBL
+- If paired with an ESP running ESP3D and connected to your GRBL laser engravers serial port, you can have a fully headless printer, needing only a power cord.
+
+### Future enhancements
+- **Fully Remote, for all USB Laser types** : Using Raspberry pi Zero 2W, OrangePi Zero 2W or Radxa or equivalent, running usbIP or virtualHere software to remotely connect USB devices over wifi
